@@ -26,3 +26,18 @@
     height: 100%;
   }
 }
+#info__input {
+  width: 330px;
+  padding: 15.5px 17.5px;
+  background-color: white;
+  border: 1px solid white;
+  outline: none;
+}
+.info__form {
+  display: flex;
+  align-items: flex-end;
+}
+.info__button {
+  width: 120px;
+  height: 56px;
+}
