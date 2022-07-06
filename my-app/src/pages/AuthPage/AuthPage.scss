@@ -1,0 +1,72 @@
+@import "../../constants.scss";
+.auth-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 858px;
+  padding: 80px 115px;
+}
+.auth__title {
+  margin-bottom: 64px;
+  font-size: 36px;
+}
+.auth__form {
+  margin-bottom: 20px;
+}
+#auth-name,
+#auth-pass {
+  width: 430px;
+  height: 56px;
+  font-size: 14px;
+  background-color: #f6f6f9;
+  border: none;
+  border-radius: 0;
+  &::placeholder {
+    color: #c6c6c6;
+  }
+}
+#auth-check {
+  background-color: $BASE_COLOR_BLUE;
+  border: none;
+  border-radius: 0;
+}
+
+#auth-submit {
+  width: 430px;
+  height: 56px;
+  font-size: 18px;
+  background-color: $BASE_COLOR_BLUE;
+  border: none;
+  border-radius: 0;
+}
+#auth-regen,
+#auth-reg {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  color: $BASE_COLOR_BLUE;
+  text-decoration: underline;
+  background-color: white;
+  border: none;
+}
+#auth-log-es,
+#auth-log-msi {
+  width: 430px;
+  height: 56px;
+  margin: 0;
+  padding: 18px 0;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: underline;
+  border: 1px solid #ededf4;
+}
+.auth__reg-container {
+  font-size: 16px;
+  text-align: center;
+}
+.auth__link-main {
+  position: absolute;
+  top: 40px;
+  left: 115px;
+}
