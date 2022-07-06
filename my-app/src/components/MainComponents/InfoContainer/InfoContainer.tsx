@@ -1,7 +1,7 @@
 import React from 'react';
 import './InfoContainer.scss';
 import infoImage from '../../../images/3d-Office-Work-1.png';
-import { Button, FormControl, Input, InputLabel } from '@mui/material';
+import { Button, Form } from 'react-bootstrap';
 
 const InfoContainer = () => {
   return (
@@ -14,16 +14,19 @@ const InfoContainer = () => {
         <p className="info__text">Включено ПО в реестр: 13 438 Правообладателей: 4 272</p>
         <div className="info__inputs">
           <div className="info__form">
+            <Form className="info__search-container">
+              <Form.Group className="mb-3 inner-addon" controlId="formBasicEmail">
+                <i className="glyphicon"></i>
+                <Form.Control
+                  type="email"
+                  placeholder="Искать реестр..."
+                  className="input-search"
+                  id="info__input"
+                />
+              </Form.Group>
+            </Form>
             <div>
-              <FormControl>
-                <InputLabel className="info__input-label" htmlFor="info__input">
-                  <p>Искать реестр...</p>
-                </InputLabel>
-                <Input id="info__input" />
-              </FormControl>
-            </div>
-            <div>
-              <Button className="info__button" variant="contained">
+              <Button id="info__button" variant="primary">
                 Искать
               </Button>
             </div>

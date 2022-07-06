@@ -1,3 +1,4 @@
+@import "../../../constants.scss";
 .info-container {
   position: relative;
   width: 100%;
@@ -28,16 +29,25 @@
 }
 #info__input {
   width: 330px;
-  padding: 15.5px 17.5px;
+  height: 56px;
+  font-size: 14px;
   background-color: white;
-  border: 1px solid white;
+  border: none;
+  border-radius: 0;
   outline: none;
 }
 .info__form {
   display: flex;
   align-items: flex-end;
 }
-.info__button {
+#info__button {
   width: 120px;
   height: 56px;
+  background-color: $BASE_COLOR_BLUE;
+  border: none;
+  border-radius: 0;
+}
+.info__search-container {
+  height: 56px;
+  margin-top: 20px;
 }

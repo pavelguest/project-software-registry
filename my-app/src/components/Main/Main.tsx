@@ -1,19 +1,20 @@
 import React from 'react';
-import DocsContainer from '../MainComponents/DocsContainer';
-import InfoContainer from '../MainComponents/InfoContainer';
-import NewsRegContainer from '../MainComponents/NewsRegContainer';
-import QuestionsContainer from '../MainComponents/QuestionsContainer';
-import RegistriesContainer from '../MainComponents/RegistriesContainer';
+import { Route, Routes } from 'react-router-dom';
+import AuthPage from '../../pages/AuthPage';
+import MainPage from '../../pages/MainPage';
+import NotFoundPage from '../../pages/NotFoundPage';
+import ProfilePage from '../../pages/ProfilePage';
 import './Main.scss';
 
 const Main = () => {
   return (
     <div className="main">
-      <InfoContainer />
-      <RegistriesContainer />
-      <NewsRegContainer />
-      <DocsContainer />
-      <QuestionsContainer />
+      <Routes>
+        <Route path="/" element={<MainPage />} />
+        <Route path="/login" element={<AuthPage />} />
+        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
     </div>
   );
 };

@@ -1,4 +1,5 @@
 import React from 'react';
+import './constants.scss';
 import './normalize.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.scss';
