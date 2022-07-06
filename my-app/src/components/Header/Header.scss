@@ -1,0 +1,118 @@
+@import "../../constants.scss";
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 0 115px;
+}
+.header__left-content {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+}
+.header__right-content {
+  display: flex;
+  align-items: center;
+  column-gap: 42px;
+}
+.header__logo {
+  width: 170px;
+  height: 40px;
+  background-image: url("../../svg/footer-logo.svg");
+}
+.header__search {
+  height: 48px;
+}
+.input-search {
+  width: 270px;
+  height: 48px;
+  font-size: 14px;
+  background-color: #f9f9fb;
+  border: none;
+  border-radius: 0;
+  outline: none;
+}
+
+.inner-addon {
+  position: relative;
+}
+
+.inner-addon .glyphicon {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  padding: 10px;
+  color: #6f727a;
+  background-image: url("../../svg/search.svg");
+  background-repeat: no-repeat;
+  background-size: 17.61px, 17.57px;
+  pointer-events: none;
+}
+
+.inner-addon .form-control {
+  padding-left: 35px;
+}
+
+.form-group-lg.inner-addon .glyphicon {
+  font-size: 20px;
+}
+#header-calendar,
+#header-bell {
+  width: 48px;
+  height: 48px;
+  background-color: #f9f9fb;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: none;
+  border-radius: 50%;
+}
+#header-calendar {
+  position: relative;
+  background-image: url("../../svg/calendar.svg");
+  background-size: 24px, 25px;
+}
+#header-bell {
+  position: relative;
+  background-image: url("../../svg/bell.svg");
+  background-size: 21px, 26px;
+}
+#header-bell::after {
+  content: "4";
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 18px;
+  height: 18px;
+  font-size: 12px;
+  background-color: $BASE_COLOR_BLUE;
+  border-radius: 50px;
+}
+.header__content {
+  position: relative;
+  display: flex;
+  column-gap: 20px;
+}
+.header__profile {
+  position: relative;
+  display: flex;
+  column-gap: 20px;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: -20px;
+    max-width: 2px;
+    height: 48px;
+    background-color: #ededf4;
+  }
+}
+#header-login,
+#header-reg {
+  width: 120px;
+  height: 48px;
+  background-color: $BASE_COLOR_BLUE;
+  border: none;
+  border-radius: 0;
+}
