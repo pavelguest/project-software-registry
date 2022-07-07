@@ -1,0 +1,50 @@
+@import "../../../constants.scss";
+
+.profile__input {
+  width: 370px;
+  height: 56px;
+  background-color: #f6f6f9;
+  border: none;
+  border-radius: 0;
+}
+.profile__submit {
+  width: 270px;
+  height: 56px;
+  margin-top: 63px;
+  background-color: $BASE_COLOR_BLUE;
+  border: none;
+  border-radius: 0;
+}
+.profile__main-data,
+.profile__pass-data {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+}
+.profile__main-data {
+  margin-bottom: 73px;
+}
+.inner {
+  position: relative;
+}
+
+.inner .glyphicon-pass {
+  position: absolute;
+  top: 55px;
+  right: 10px;
+  padding: 10px;
+  color: #6f727a;
+  background-image: url("../../../svg/view.svg");
+  background-repeat: no-repeat;
+  background-size: 17.61px, 17.57px;
+}
+.profile-form__subtitle {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.profile-form__label {
+  font-size: 14px;
+  color: #a8aaae;
+}
