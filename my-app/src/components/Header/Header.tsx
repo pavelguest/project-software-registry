@@ -46,6 +46,7 @@ const Header = () => {
                           href=""
                           onClick={() => {
                             dispatch(authActions.toggleAuth(false));
+                            navigate('/');
                           }}
                         >
                           Выйти
