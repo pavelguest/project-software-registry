@@ -20,15 +20,27 @@ const RegistriesTable = () => {
           margin: '40px 0',
         }}
       >
-        <Table sx={{ minWidth: 650 }} aria-label="simple table">
+        <Table sx={{ minWidth: 650, height: ' 1364px' }} aria-label="simple table">
           <TableHead>
             <TableRow>
-              <TableCell align="right">Регистрационный номер</TableCell>
-              <TableCell align="right">Наименование программного обеспечения</TableCell>
-              <TableCell align="right">Код класса</TableCell>
-              <TableCell align="right">Класс программного обеспечения</TableCell>
-              <TableCell align="right">Дата регистрации</TableCell>
-              <TableCell align="right">Адрес сайта</TableCell>
+              <TableCell sx={{ color: '#009cb4' }} align="right">
+                Регистрационный номер
+              </TableCell>
+              <TableCell sx={{ color: '#009cb4' }} align="right">
+                Наименование программного обеспечения
+              </TableCell>
+              <TableCell sx={{ color: '#009cb4' }} align="right">
+                Код класса
+              </TableCell>
+              <TableCell sx={{ color: '#009cb4' }} align="right">
+                Класс программного обеспечения
+              </TableCell>
+              <TableCell sx={{ color: '#009cb4' }} align="right">
+                Дата регистрации
+              </TableCell>
+              <TableCell sx={{ color: '#009cb4' }} align="right">
+                Адрес сайта
+              </TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -39,7 +51,9 @@ const RegistriesTable = () => {
                 <TableCell align="right">{row.code}</TableCell>
                 <TableCell align="right">{row.classProg}</TableCell>
                 <TableCell align="right">{row.date}</TableCell>
-                <TableCell align="right">{row.path}</TableCell>
+                <TableCell sx={{ color: '#009cb4', textDecoration: 'underline' }} align="right">
+                  {row.path}
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>

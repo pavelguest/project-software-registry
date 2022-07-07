@@ -19,14 +19,24 @@ const DocsTable = () => {
         margin: '40px 0',
       }}
     >
-      <Table sx={{ minWidth: 650 }} aria-label="simple table">
+      <Table sx={{ minWidth: 650, height: '638px' }} aria-label="simple table">
         <TableHead>
           <TableRow>
-            <TableCell align="right">Категория</TableCell>
-            <TableCell align="right">Наименование </TableCell>
-            <TableCell align="right">Дата</TableCell>
-            <TableCell align="right">Номер</TableCell>
-            <TableCell align="right">Содержание</TableCell>
+            <TableCell sx={{ color: '#009cb4' }} align="right">
+              Категория
+            </TableCell>
+            <TableCell sx={{ color: '#009cb4' }} align="right">
+              Наименование{' '}
+            </TableCell>
+            <TableCell sx={{ color: '#009cb4' }} align="right">
+              Дата
+            </TableCell>
+            <TableCell sx={{ color: '#009cb4' }} align="right">
+              Номер
+            </TableCell>
+            <TableCell sx={{ color: '#009cb4' }} align="right">
+              Содержание
+            </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -36,7 +46,9 @@ const DocsTable = () => {
               <TableCell align="right">{doc.name}</TableCell>
               <TableCell align="right">{doc.date}</TableCell>
               <TableCell align="right">{doc.num}</TableCell>
-              <TableCell align="right">{doc.file}</TableCell>
+              <TableCell sx={{ color: '#009cb4' }} align="right">
+                {doc.file}
+              </TableCell>
             </TableRow>
           ))}
         </TableBody>
