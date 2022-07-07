@@ -16,24 +16,27 @@ const ProfileForm = () => {
           <Form.Group className="mb-3" controlId="formBasicName">
             <Form.Label className="profile-form__label">Имя</Form.Label>
             <Form.Control
+              id="formBasicName"
               type="name"
               placeholder="Введите имя"
               defaultValue={'Захар'}
               className="profile__input"
             />
           </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="mb-3" controlId="formBasicName1">
             <Form.Label className="profile-form__label">Фамилия</Form.Label>
             <Form.Control
+              id="formBasicName1"
               type="name"
               placeholder="Введите фамилию"
               defaultValue={'Палазник'}
               className="profile__input"
             />
           </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="mb-3" controlId="formBasicName2">
             <Form.Label className="profile-form__label">Отчество</Form.Label>
             <Form.Control
+              id="formBasicName2"
               type="name"
               placeholder="Введите отчество"
               defaultValue={'Геннадьевич'}
@@ -56,9 +59,10 @@ const ProfileForm = () => {
               <option value="2">Витебск</option>
             </Form.Select>
           </Form.Group>
-          <Form.Group className="mb-3" controlId="formBasicEmail">
+          <Form.Group className="mb-3" controlId="formBasicTel">
             <Form.Label className="profile-form__label">Мобильный телефон</Form.Label>
             <Form.Control
+              id="formBasicTel"
               type="tel"
               placeholder="Введите номер"
               defaultValue={'+375 22 111 33 44'}
@@ -68,9 +72,10 @@ const ProfileForm = () => {
         </div>
         <h4 className="profile-form__subtitle">Пароль</h4>
         <div className="profile__pass-data">
-          <Form.Group className="mb-3 inner" controlId="formBasicEmail">
+          <Form.Group className="mb-3 inner" controlId="formBasicPass">
             <Form.Label className="profile-form__label">Новый пароль</Form.Label>
             <Form.Control
+              id="formBasicPass"
               type={isViewPass ? 'text' : 'password'}
               placeholder="Введите пароль"
               defaultValue={'1234567'}
@@ -78,9 +83,10 @@ const ProfileForm = () => {
             />
             <i className="glyphicon-pass" onClick={toggleViewPass}></i>
           </Form.Group>
-          <Form.Group className="mb-3 inner" controlId="formBasicEmail">
+          <Form.Group className="mb-3 inner" controlId="formBasicPass1">
             <Form.Label className="profile-form__label">Подтвердите пароль</Form.Label>
             <Form.Control
+              id="formBasicPass1"
               type={isViewPass ? 'text' : 'password'}
               placeholder="Введите пароль"
               defaultValue={'1234567'}

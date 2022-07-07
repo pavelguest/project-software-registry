@@ -15,7 +15,7 @@ const InfoContainer = () => {
         <div className="info__inputs">
           <div className="info__form">
             <Form className="info__search-container">
-              <Form.Group className="mb-3 inner-addon" controlId="formBasicEmail">
+              <Form.Group className="mb-3 inner-addon" controlId="info__input">
                 <i className="glyphicon"></i>
                 <Form.Control
                   type="email"

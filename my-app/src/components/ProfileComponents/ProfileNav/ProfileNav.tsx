@@ -8,8 +8,13 @@ import fileIco from '../../../svg/file.svg';
 import lockIco from '../../../svg/lock.svg';
 import loadIco from '../../../svg/load.svg';
 import exitIco from '../../../svg/exit.svg';
+import { authActions } from '../../../redux/reducers/authSlice';
+import { useAppDispatch } from '../../../redux/hooks/redux';
+import { useNavigate } from 'react-router-dom';
 
 const ProfileNav = () => {
+  const navigate = useNavigate();
+  const dispatch = useAppDispatch();
   return (
     <div className="profile__nav">
       <Navbar className="profile__nav-link">
@@ -56,7 +61,13 @@ const ProfileNav = () => {
       </Navbar>
       <Navbar className="profile__nav-link">
         <Container>
-          <Navbar.Brand href="">
+          <Navbar.Brand
+            href=""
+            onClick={() => {
+              dispatch(authActions.toggleAuth(false));
+              navigate('/');
+            }}
+          >
             <img src={exitIco} alt="register-ico" /> Выход
           </Navbar.Brand>
         </Container>

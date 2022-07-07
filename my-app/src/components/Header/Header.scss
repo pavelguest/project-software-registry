@@ -116,3 +116,22 @@
   border: none;
   border-radius: 0;
 }
+.header__profile-nav {
+  width: 232px;
+}
+.header__user-title {
+  position: relative;
+  padding-left: 58px;
+  font-size: 16px;
+}
+.header__user-title::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  right: 0;
+  left: 0;
+  width: 48px;
+  height: 48px;
+  background-image: url("../../svg/user.png");
+  background-repeat: no-repeat;
+}
